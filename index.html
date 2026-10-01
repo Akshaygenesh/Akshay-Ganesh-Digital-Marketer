@@ -3,119 +3,197 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Akshay Ganesh | Freelance Digital Marketer in Calicut, Kerala</title>
+<title>Akshay Ganesh | Digital Marketing Strategist in Calicut, Kerala, India</title>
 <meta name="description" content="Freelance digital marketer in Calicut, Kerala. Meta Ads, Google Ads, social media, content and WhatsApp marketing for real estate, retail, travel and service brands.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--red:#E43D12;--rose:#D6536D;--pink:#FFA2B6;--gold:#EFB11D;--cream:#EBE9E1;--ink:#2b100a;--soft:#5c2a1e}
+:root{--lime:#C6FF34;--black:#000;--card:#121212;--line:#2a2a2a;--mute:#a8a8a0;--white:#f5f5ef}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--cream);color:var(--ink);font:400 1.05rem/1.65 Archivo,system-ui,sans-serif}
+body{background:var(--black);color:var(--white);font:400 1rem/1.7 Poppins,system-ui,sans-serif}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 1.5rem}
-h2,h3{font-weight:900;line-height:1;letter-spacing:-.03em}
-h2{font-size:clamp(2.4rem,6vw,4.6rem);color:var(--red);margin-bottom:1rem}
-.hero{position:relative;min-height:100svh;overflow:hidden;padding:1.4rem 0 0;display:flex;flex-direction:column}
-.bar{display:flex;justify-content:space-between;align-items:center;color:var(--red);font-weight:700;font-size:.95rem;padding:0 1.5rem}
-.bar a{text-decoration:none;margin-left:1.5rem}
-.bar a:hover{text-decoration:underline;text-underline-offset:5px}
-.dots{display:flex;justify-content:space-between;padding:1.6rem 1.5rem 0}
-.dots i{width:14px;height:14px;border-radius:50%;background:var(--red)}
-.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:1.6rem 1.5rem 0;font-size:.92rem;color:var(--soft);width:100%}
-.cols a{text-decoration:underline}
-.name{position:absolute;left:1.5vw;bottom:.4vw;font-weight:900;font-size:17.5vw;line-height:.82;letter-spacing:-.045em;color:var(--red);text-transform:uppercase;white-space:nowrap;user-select:none}
-.me{position:absolute;right:2vw;bottom:0;height:min(80svh,860px);width:auto;z-index:2}
-.tag{position:absolute;left:1.5rem;bottom:calc(17.5vw*.84 + .5vw);font-weight:700;color:var(--ink);z-index:3}
-.tag span{display:inline-block;background:var(--gold);padding:.35rem .9rem;border-radius:99px;font-size:.95rem}
-.btn{display:inline-block;padding:.9rem 1.7rem;border-radius:99px;background:var(--red);color:#fff;font-weight:700;text-decoration:none}
-.btn:hover{background:var(--ink)}
-.btn.o{background:none;color:var(--ink);border:2px solid var(--ink)}
-.btn.o:hover{background:var(--ink);color:var(--cream)}
-.brandline{background:var(--gold);padding:1.1rem 0;font-weight:700;text-align:center;font-size:1rem}
-section{padding:5.5rem 0}
-.lead{max-width:38rem;color:var(--soft);margin-bottom:2.5rem}
-.svcs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
-.svc{border-radius:22px;padding:1.8rem;min-height:14rem;display:flex;flex-direction:column;justify-content:space-between}
-.svc h3{font-size:1.7rem}
-.svc p{font-size:.98rem;margin-top:1rem}
-.c1{background:var(--red);color:#fff}.c2{background:var(--pink)}.c3{background:var(--gold)}.c4{background:var(--rose)}.c5{background:var(--ink);color:var(--cream)}.c6{background:var(--pink)}
-.c4{color:var(--ink)}
-.about{display:grid;grid-template-columns:1.15fr .85fr;gap:4rem}
-.job{border-top:2px solid var(--ink);padding:1.2rem 0 1.4rem}
-.job b{font-size:1.5rem;font-weight:900;letter-spacing:-.02em;display:block}
-.job span{color:var(--soft);font-size:.92rem}
-.job p{margin-top:.4rem;font-size:.97rem}
-.side h3{font-size:1.6rem;color:var(--red);margin:0 0 .8rem}
+h1,h2,h3{font-weight:700;line-height:1.05;letter-spacing:-.03em}
+h2{font-size:clamp(2.2rem,5vw,3.8rem);color:var(--lime);margin-bottom:1rem}
+.lead{color:var(--mute);max-width:40rem;margin-bottom:2.5rem}
+section{padding:5.5rem 0;scroll-margin-top:64px}
+#certificate,#service,#contact{background:var(--lime);color:var(--black)}
+#certificate h2,#service h2,#contact h2{color:var(--black)}
+#certificate .lead,#service .lead{color:#2c3a00}
+header.site{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.85rem;padding-bottom:.85rem}
+header.site b{color:var(--lime);font-weight:700;white-space:nowrap}
+header.site nav{display:flex;gap:1.5rem;overflow-x:auto;scrollbar-width:none}
+header.site nav a{text-decoration:none;font-weight:500;font-size:.92rem;white-space:nowrap}
+header.site nav a:hover{color:var(--lime)}
+.btn{display:inline-block;padding:.85rem 1.7rem;border-radius:99px;background:var(--lime);color:var(--black);font-weight:600;text-decoration:none;border:2px solid var(--lime)}
+.btn:hover{background:#fff;border-color:#fff}
+.btn.o{background:none;color:var(--white);border-color:var(--white)}
+.btn.o:hover{background:var(--white);color:var(--black)}
+.hero{padding:5rem 0 4rem;scroll-margin-top:64px}
+.pill{display:inline-block;border:1.5px solid var(--lime);color:var(--lime);border-radius:99px;padding:.35rem 1.1rem;font-weight:500;font-size:.92rem;margin-bottom:1.6rem}
+.hero h1{font-size:clamp(3.2rem,12.5vw,10.5rem);font-weight:800;text-transform:uppercase;line-height:.88;letter-spacing:-.045em}
+.hero h1 span{color:var(--lime);display:block}
+.hero .sub{max-width:40rem;margin:2rem 0;color:#d6d6cf;font-size:1.12rem}
+.hero .cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.info{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;border-top:1px solid var(--line);margin-top:3.5rem;padding-top:1.5rem}
+.info small{display:block;color:var(--lime);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+.info a{text-decoration:none}.info a:hover{color:var(--lime)}
+.strip{background:var(--lime);color:var(--black);padding:1rem 0;font-weight:700;font-size:clamp(.95rem,2vw,1.25rem);text-align:center;letter-spacing:-.01em}
+.about2{display:grid;grid-template-columns:1.3fr .7fr;gap:4rem;align-items:start}
+.about2 p{margin-bottom:1.1rem;color:#d6d6cf;max-width:40rem}
+.about2 p strong{color:var(--white)}
+.quote{font-weight:700;font-size:1.4rem;letter-spacing:-.02em;color:var(--lime);margin:1.6rem 0}
+.stats{display:grid;gap:1rem}
+.stat{background:var(--lime);color:var(--black);border-radius:24px;padding:1.4rem 1.6rem;font-weight:500}
+.stat:nth-child(2){background:#fff}.stat:nth-child(3){background:var(--card);color:var(--white);border:1px solid var(--lime)}
+.stat b{display:block;font-size:3.4rem;font-weight:800;letter-spacing:-.04em;line-height:1.05}
+.logos{background:#fff7f1;border-radius:24px;padding:1rem}
+.logos img{display:block;width:100%;height:auto}
+.gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}
+.gal figure{margin:0}
+.gal img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:14px;border:1px solid var(--line);cursor:zoom-in;background:#231f20}
+.gal figcaption{font-weight:600;margin-top:.5rem}
+.certs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.cert{border-radius:20px;padding:1.3rem;min-height:9rem;display:flex;flex-direction:column;justify-content:space-between;background:var(--black);color:var(--white)}
+.cert:nth-child(even){background:#fff;color:var(--black)}
+.cert small{opacity:.75;font-weight:500}.cert b{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.cert:nth-child(odd) b{color:var(--lime)}
+.about{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:4rem}
+.job{border-top:1px solid var(--line);padding:1.2rem 0 1.4rem}
+.job b{font-size:1.4rem;font-weight:700;letter-spacing:-.02em;display:block}
+.job span{color:var(--lime);font-size:.9rem;font-weight:500}
+.job p{margin-top:.4rem;font-size:.95rem;color:#d6d6cf}
+.side h3{font-size:1.5rem;color:var(--lime);margin:0 0 .8rem}
 .side h3:not(:first-child){margin-top:2.2rem}
+.side p{color:#d6d6cf}
 .chips{display:flex;flex-wrap:wrap;gap:.55rem}
-.chips span{background:var(--ink);color:var(--cream);border-radius:99px;padding:.35rem 1rem;font-weight:700;font-size:.9rem}
-details{border-top:2px solid var(--ink);padding:1.1rem 0}
-details:last-of-type{border-bottom:2px solid var(--ink)}
-summary{cursor:pointer;font-weight:900;font-size:1.2rem;letter-spacing:-.01em;list-style:none;display:flex;justify-content:space-between;gap:1rem}
-summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--red)}
+.chips span{border:1.5px solid var(--lime);color:var(--white);border-radius:99px;padding:.3rem 1rem;font-weight:500;font-size:.88rem}
+.svcs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}
+.svc{border-radius:24px;padding:1.8rem;min-height:14rem;display:flex;flex-direction:column;justify-content:space-between;background:var(--black);color:var(--white)}
+.svc:nth-child(even){background:#fff;color:var(--black)}
+.svc h3{font-size:1.5rem}.svc:nth-child(odd) h3{color:var(--lime)}
+.svc p{font-size:.95rem;margin-top:1rem;opacity:.9}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem}
+.why div{border-top:2px solid var(--lime);padding-top:1rem}
+.why h3{font-size:1.3rem;margin-bottom:.6rem}
+.why ul{padding-left:1.1rem;color:#d6d6cf;font-size:.95rem}.why li{margin:.35rem 0}
+details{border-top:1px solid var(--line);padding:1.1rem 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--lime)}
 details[open] summary::after{content:"\2212"}
-details p{margin-top:.7rem;color:var(--soft);max-width:44rem}
-.contact{background:var(--red);color:#fff;text-align:center;padding:6rem 0}
-.contact h2{color:#fff;font-size:clamp(2.6rem,8vw,6.5rem)}
-.contact p{max-width:34rem;margin:0 auto 2.2rem}
+details p{margin-top:.7rem;color:var(--mute);max-width:44rem}
+.contact{text-align:center;padding:6rem 0}
+.contact h2{font-size:clamp(2.6rem,8vw,6rem)}
+.contact p{max-width:34rem;margin:0 auto 1.6rem}
+.contact .det{margin-bottom:1.8rem;font-size:1.1rem;font-weight:500}
+.contact .det a{text-decoration:none}
 .contact .cta{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
-.contact .btn{background:var(--gold);color:var(--ink)}
-.contact .btn:hover{background:#fff}
-.contact .btn.o{background:none;color:#fff;border-color:#fff}
-.contact .btn.o:hover{background:#fff;color:var(--red)}
-footer{padding:1.6rem 0;text-align:center;font-size:.88rem;color:var(--soft)}
+.contact .btn{background:var(--black);color:var(--lime);border-color:var(--black)}
+.contact .btn:hover{background:#fff;color:var(--black);border-color:#fff}
+.contact .btn.o{background:none;color:var(--black)}
+.contact .btn.o:hover{background:var(--black);color:var(--lime)}
+.soc{display:flex;gap:.8rem;justify-content:center;margin-bottom:1rem}
+.soc a{width:46px;height:46px;border-radius:50%;background:var(--lime);color:var(--black);display:grid;place-items:center}
+.soc a:hover{background:#fff}
+.soc svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+footer{padding:2rem 0;text-align:center;font-size:.88rem;color:var(--mute);background:var(--black)}
+dialog{border:0;background:transparent;max-width:96vw;max-height:96vh;padding:0}
+dialog::backdrop{background:rgba(0,0,0,.9)}
+dialog img{max-width:96vw;max-height:94vh;display:block}
 @media(max-width:860px){
-.hero{min-height:0}
-.bar a:not(:last-child){display:none}
-.cols{grid-template-columns:1fr;gap:1rem}
-.name{position:static;font-size:21vw;margin:1.4rem 0 0 1.2rem;line-height:.85;order:3}.tag{order:4}.cols{order:5}.me{order:6}
-.tag{position:static;padding:0 1.5rem;margin-top:.6rem}
-.me{position:relative;display:block;right:auto;height:auto;width:min(78vw,340px);margin:-8vw auto 0}
-.svcs,.about{grid-template-columns:1fr}
-.about{gap:2.5rem}
 section{padding:3.5rem 0}
+.hero{padding:3rem 0 2.5rem}
+.about2,.about{grid-template-columns:minmax(0,1fr);gap:2rem}
+.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{padding:.9rem;font-size:.8rem;line-height:1.3}.stat b{font-size:1.9rem}
+.gal,.svcs,.why{grid-template-columns:minmax(0,1fr)}
+.certs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.info{grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:2.5rem}
+header.site b{display:none}
+header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5rem;width:100%;justify-content:space-between}header.site nav a{font-size:.76rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header class="hero">
-  <div class="bar"><span>Akshay Ganesh</span><nav><a href="#services">Services</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div>
-  <div class="dots"><i></i><i></i></div>
-  <div class="cols">
-    <p>Freelance digital marketer based in Calicut, Kerala, with over a year of experience in Meta Ads, Google Ads and social media.</p>
-    <p>Paid ads, social media, content, WhatsApp and email marketing. I plan it, run it and report on it.</p>
-    <p>Calicut, Kerala, India<br>+91 77364 42812<br><a href="mailto:akshaydespinz@gmail.com">akshaydespinz@gmail.com</a></p>
-  </div>
-  <div class="tag"><span>Freelance Digital Marketer</span></div>
-  <div class="name" aria-hidden="true">Akshay</div>
-  <img class="me" src="images/akshay-cut.webp" alt="Akshay Ganesh, freelance digital marketer in Calicut">
-  <h1 style="position:absolute;width:1px;height:1px;overflow:hidden">Akshay Ganesh, freelance digital marketer in Calicut, Kerala</h1>
-</header>
-
-<div class="brandline"><div class="wrap">30+ clients served across Kerala</div></div>
+<header class="site"><div class="wrap"><b>Akshay Ganesh</b>
+<nav><a href="#home">Home</a><a href="#about">About</a><a href="#certificate">Certificate</a><a href="#service">Service</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav></div></header>
 
 <main>
-<section id="services"><div class="wrap">
-  <h2>What I do</h2>
-  <p class="lead">One person handling your ads, content and messaging, so nothing gets lost between agencies.</p>
-  <div class="svcs">
-    <div class="svc c1"><h3>Meta Ads</h3><p>Facebook and Instagram lead campaigns, with creatives, audiences and budgets managed for you.</p></div>
-    <div class="svc c2"><h3>Google Ads</h3><p>Search engine marketing that reaches people already looking for what you sell.</p></div>
-    <div class="svc c3"><h3>Social media</h3><p>Content planning, posting, campaigns and community replies across platforms.</p></div>
-    <div class="svc c4"><h3>Content marketing</h3><p>Festival posts, campaign concepts and product creatives that match your brand.</p></div>
-    <div class="svc c5"><h3>WhatsApp and email</h3><p>Broadcast and email campaigns that keep leads and customers coming back.</p></div>
-    <div class="svc c6"><h3>Google Business Profile</h3><p>Set up and manage your listing so local customers find you on Google.</p></div>
+<div class="hero" id="home"><div class="wrap">
+  <span class="pill">Digital marketing strategist in Calicut, Kerala, India</span>
+  <h1>Akshay <span>Ganesh</span></h1>
+  <p class="sub">Meta Ads, Google Ads, social media, content, WhatsApp and email marketing that bring in real enquiries. I plan it, run it and report on it.</p>
+  <div class="cta"><a class="btn" href="#about">Know about me</a><a class="btn o" href="https://wa.me/917736442812?text=Hi%20Akshay%2C%20I%27d%20like%20to%20enquire%20about%20your%20digital%20marketing%20services.">Send inquiry</a></div>
+  <div class="info"><div><small>Location</small>Calicut, Kerala, India</div><div><small>Phone</small><a href="tel:+917736442812">+91 77364 42812</a></div><div><small>Email</small><a href="mailto:akshaydespinz@gmail.com">akshaydespinz@gmail.com</a></div></div>
+</div></div>
+<div class="strip"><div class="wrap">30+ clients &nbsp;|&nbsp; 100+ projects &nbsp;|&nbsp; Meta Ads &nbsp;|&nbsp; Google Ads &nbsp;|&nbsp; Social media</div></div>
+
+<section id="about"><div class="wrap about2">
+  <div>
+    <h2>About me</h2>
+    <p>Hi, I'm <strong>Akshay Ganesh</strong>, a Digital Marketing Specialist and Social Media Manager with 3+ years of professional experience helping businesses build and grow their online presence.</p>
+    <p>I've worked with 30+ clients across different industries, gaining hands-on experience in social media management, Meta advertising, performance marketing, content strategy, lead generation, Facebook and Instagram marketing, and digital marketing strategy.</p>
+    <p>My approach combines creative content, targeted advertising, audience research and data-driven marketing to help brands reach the right audience and achieve measurable business results.</p>
+    <p>I'm passionate about digital marketing, continuously learning new trends and strategies, and turning ideas into effective digital campaigns that help businesses grow.</p>
+    <div class="quote">&ldquo;Selected and limited clients for better results&rdquo;</div>
+    <a class="btn" href="https://wa.me/917736442812?text=Hi%20Akshay%2C%20I%27d%20like%20to%20enquire%20about%20your%20digital%20marketing%20services.">Send inquiry</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>100+</b>Projects</div>
+    <div class="stat"><b>30+</b>Clients</div>
+    <div class="stat"><b>100%</b>Positive feedback</div>
   </div>
 </div></section>
 
-<section id="about" style="padding-top:0"><div class="wrap about">
+<section id="brands"><div class="wrap">
+  <h2>Featured brands</h2>
+  <p class="lead">Some of the brands I've worked with across real estate, retail, travel, migration, interior design and beauty.</p>
+  <div class="logos"><img src="images/brands.jpg" alt="Featured brands: Quadcubes, Her Store, Ekathra Experiences, Catalyst, Atlantis Migration, WEA Designs, Ascot Migration, Ozsy My Nails, RDW, Novi Indus, RBM Infracon, Prime Space, PB Homes, TBPL Homes and City Dental Clinic" loading="lazy"></div>
+</div></section>
+
+<section id="portfolio"><div class="wrap">
+  <h2>See my portfolio</h2>
+  <p class="lead">Social media content, campaign concepts and ads I created and managed. Click any image to enlarge.</p>
+  <div class="gal">
+    <figure><img src="images/p6.jpg" alt="Concept creatives" loading="lazy"><figcaption>Concept creatives</figcaption></figure>
+    <figure><img src="images/p7.jpg" alt="Festival and campaign creatives" loading="lazy"><figcaption>Festival and campaign creatives</figcaption></figure>
+    <figure><img src="images/p8.jpg" alt="Brand creatives" loading="lazy"><figcaption>Brand creatives</figcaption></figure>
+    <figure><img src="images/p12.jpg" alt="TBPL &amp; PB Homes" loading="lazy"><figcaption>TBPL &amp; PB Homes</figcaption></figure>
+    <figure><img src="images/p15.jpg" alt="Primespace Projects" loading="lazy"><figcaption>Primespace Projects</figcaption></figure>
+    <figure><img src="images/p14.jpg" alt="Her Store Group" loading="lazy"><figcaption>Her Store Group</figcaption></figure>
+    <figure><img src="images/p10.jpg" alt="Atlantis Migration" loading="lazy"><figcaption>Atlantis Migration</figcaption></figure>
+    <figure><img src="images/p13.jpg" alt="Ekathra Experiences" loading="lazy"><figcaption>Ekathra Experiences</figcaption></figure>
+    <figure><img src="images/p9.jpg" alt="WEA Designs" loading="lazy"><figcaption>WEA Designs</figcaption></figure>
+    <figure><img src="images/p11.jpg" alt="Ozsy My Nails" loading="lazy"><figcaption>Ozsy My Nails</figcaption></figure>
+    <figure><img src="images/p16.jpg" alt="RDW Media" loading="lazy"><figcaption>RDW Media</figcaption></figure>
+    <figure><img src="images/p17.jpg" alt="Meta ads" loading="lazy"><figcaption>Meta ads</figcaption></figure>
+    <figure><img src="images/p18.jpg" alt="Google ads" loading="lazy"><figcaption>Google ads</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="certificate"><div class="wrap">
+  <h2>Certification</h2>
+  <p class="lead">Certified and trained in paid advertising, analytics and inbound marketing.</p>
+  <div class="certs">
+    <div class="cert"><small>Google</small><b>Google Ads Certification</b></div>
+    <div class="cert"><small>Meta</small><b>Meta Ads Certification</b></div>
+    <div class="cert"><small>Google</small><b>Google Analytics Academy</b></div>
+    <div class="cert"><small>HubSpot</small><b>HubSpot Academy</b></div>
+    <div class="cert"><small>HubSpot</small><b>Inbound Marketing</b></div>
+    <div class="cert"><small>SEMrush</small><b>SEMrush</b></div>
+    <div class="cert"><small>Course</small><b>Fundamentals of Digital Marketing</b></div>
+    <div class="cert"><small>Course</small><b>Advanced Analytical Academy</b></div>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap about">
   <div>
     <h2>Experience</h2>
-    <p class="lead" style="margin-bottom:1.5rem">Digital marketing executive and social media manager with over a year of experience in Meta Ads and Google Ads. I focus on brand visibility, engagement and campaign performance, and I use data to set strategy.</p>
     <div class="job"><b>Noviindus Technologies</b><span>Social Media Manager, Feb 2026 to Jun 2026</span><p>Managed social media strategy, content and campaign execution across platforms. Ran and optimised Meta Ads and Google Ads to support brand visibility.</p></div>
     <div class="job"><b>Quadcubes</b><span>Social Media Manager, Jun 2025 to Oct 2025</span><p>Managed social media accounts, content planning and paid ad campaigns. Tracked campaign performance and adjusted strategy to improve engagement.</p></div>
     <div class="job"><b>RDW Media</b><span>Social Media Manager, Mar 2024 to Jun 2025</span><p>Social media marketing and content strategy across client accounts. Managed Meta Ads and Google Ads to improve campaign performance.</p></div>
@@ -127,8 +205,6 @@ section{padding:3.5rem 0}
   <div class="side">
     <h3>Core skills</h3>
     <div class="chips"><span>Social Media Marketing</span><span>Performance Marketing</span><span>Content Marketing</span><span>Email Marketing</span><span>WhatsApp Marketing</span><span>Search Engine Marketing</span><span>Google Business Profile</span><span>Meta Ads</span><span>Google Ads</span></div>
-    <h3>Certifications</h3>
-    <div class="chips"><span>Google Ads</span><span>Meta Ads</span><span>Google Analytics Academy</span><span>HubSpot Academy</span><span>Inbound Marketing</span><span>SEMrush</span><span>Fundamentals of Digital Marketing</span><span>Advanced Analytical Academy</span></div>
     <h3>Education</h3>
     <p><b>Digital Marketing</b>, CDA Academy (Aug to Nov 2023)<br><b>Automobile Engineering</b>, Central Technical College (2013 to 2015)<br><b>Secondary Education</b>, National Institute of Open Schooling (2016)</p>
     <h3>Platforms</h3>
@@ -136,21 +212,58 @@ section{padding:3.5rem 0}
   </div>
 </div></section>
 
-<section id="faq" style="padding-top:0"><div class="wrap" style="max-width:860px">
-  <h2>Questions clients ask</h2>
-  <details><summary>Do you work with businesses outside Calicut?</summary><p>Yes. I'm based in Calicut, and my clients are across Kerala, including Thrissur, Kochi and Kottayam. I work with clients remotely too.</p></details>
-  <details><summary>Which industries have you worked in?</summary><p>Real estate and construction, women's retail, travel, migration consulting, interior design, beauty and industrial infrastructure.</p></details>
-  <details><summary>Can you handle ads and content together?</summary><p>Yes. I plan the creatives, write the copy, set up the Meta and Google campaigns and report on leads, so you deal with one person.</p></details>
-  <details><summary>How will I know the ads are working?</summary><p>I share lead numbers and cost per lead from Ads Manager, so you can see what each rupee brought in.</p></details>
-  <details><summary>How do I get started?</summary><p>Message me on WhatsApp with your business and goal. We'll talk about what you need and I'll suggest a plan.</p></details>
+<section id="service"><div class="wrap">
+  <h2>My digital marketing services</h2>
+  <p class="lead">One person handling your ads, content and messaging, so nothing gets lost between agencies.</p>
+  <div class="svcs">
+    <div class="svc c1"><h3>Meta Ads</h3><p>Facebook and Instagram campaigns built around your offer, with creatives, audiences, budgets and lead tracking handled for you.</p></div>
+    <div class="svc c2"><h3>Google Ads (SEM)</h3><p>Paid search and display campaigns that put your business in front of people already searching for what you sell.</p></div>
+    <div class="svc c3"><h3>Social media marketing</h3><p>Content planning, posting, campaigns, community replies and influencer outreach to build and maintain your profiles.</p></div>
+    <div class="svc c4"><h3>Content marketing</h3><p>Festival posts, campaign concepts and product creatives that engage, attract and keep your audience.</p></div>
+    <div class="svc c5"><h3>WhatsApp and email marketing</h3><p>Broadcasts and email campaigns that follow up leads and bring customers back.</p></div>
+    <div class="svc c6"><h3>Google Business Profile</h3><p>Set up and manage your listing so local customers find you, call you and visit you.</p></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <h2>Why choose Akshay Ganesh for your digital marketing service in Kerala</h2>
+  <div class="why">
+    <div><h3>Proven skills</h3><ul><li>Social media manager and paid ads specialist</li><li>Hands-on experience across 30+ clients and 100+ projects</li></ul></div>
+    <div><h3>Certified</h3><ul><li>Google Ads and Meta Ads certified</li><li>HubSpot, SEMrush and Google Analytics Academy training</li></ul></div>
+    <div><h3>Transparent communication</h3><ul><li>Regular updates on how your campaigns are doing</li><li>Lead numbers and cost per lead, shared openly</li></ul></div>
+    <div><h3>Diverse skill set</h3><ul><li>Meta Ads, Google Ads, social media, content</li><li>WhatsApp and email marketing</li><li>Data-driven decisions from campaign reports</li></ul></div>
+    <div><h3>Limited clients, better results</h3><ul><li>I take on a limited number of clients</li><li>Strategy tailored to each business and goal</li></ul></div>
+    <div><h3>Easy to work with</h3><ul><li>Based in Calicut, working with clients across Kerala</li><li>Open to enquiries, collaborations and consultations</li></ul></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:860px">
+  <h2>Frequently asked questions</h2>
+  <details><summary>Who is the best digital marketer in Calicut for my business?</summary><p>I'm Akshay Ganesh, a freelance digital marketer in Calicut who builds personal strategies around your goal, whether that's leads, sales, calls or footfall.</p></details>
+  <details><summary>Do you work with businesses outside Calicut?</summary><p>Yes. I'm based in Calicut, but I work with clients across Kerala, including Thrissur, Kochi and Kottayam, and with businesses anywhere in India remotely.</p></details>
+  <details><summary>What digital marketing services do you offer?</summary><p>Meta Ads, Google Ads (SEM), social media marketing, content marketing, WhatsApp and email marketing, and Google Business Profile management.</p></details>
+  <details><summary>How can Meta Ads help my business?</summary><p>Meta Ads put your offer in front of the right people on Facebook and Instagram. I set up lead campaigns, test creatives and audiences, and report cost per lead so you can see what works.</p></details>
+  <details><summary>How can Google Ads help my business?</summary><p>Google Ads shows your business to people who are already searching for what you sell, on Google Search and across the web. I manage keywords, ads and budgets to bring relevant enquiries.</p></details>
+  <details><summary>Can you manage my social media accounts?</summary><p>Yes. I plan content, create or brief the creatives, post, reply to followers and track performance, on Instagram, Facebook, LinkedIn and other platforms.</p></details>
+  <details><summary>What is a Google Business Profile and do I need one?</summary><p>It's your free listing on Google Search and Maps. If customers look for you locally, a well-managed profile helps them find you, call you and read reviews.</p></details>
+  <details><summary>How will I know the campaigns are working?</summary><p>I share lead numbers, cost per lead and other results from Ads Manager and Google Ads, with regular updates so you always know where your budget went.</p></details>
+  <details><summary>How do I get started?</summary><p>Message me on WhatsApp or email with your business and goal for a free consultation. I'll suggest a plan and next steps.</p></details>
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
-  <h2>Let's work together</h2>
-  <p>Tell me what you sell and who you want to reach. I'll reply with a clear plan.</p>
-  <div class="cta"><a class="btn" href="https://wa.me/917736442812">WhatsApp +91 77364 42812</a><a class="btn o" href="mailto:akshaydespinz@gmail.com">Email me</a><a class="btn o" href="https://www.instagram.com/akshay_digitalmarketer/" target="_blank" rel="noopener">Instagram</a><a class="btn o" href="https://www.linkedin.com/in/akshayganesh-nc/" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://share.google/LJ2TwvCmG0s0rk1sK" target="_blank" rel="noopener">Find me on Google</a></div>
+  <h2>Connect now</h2>
+  <p>Looking for a digital marketer in Kerala? Tell me what you sell and who you want to reach, and I'll reply with a clear plan.</p>
+  <div class="det">Calicut, Kerala, India<br><a href="tel:+917736442812">+91 77364 42812</a><br><a href="mailto:akshaydespinz@gmail.com">akshaydespinz@gmail.com</a></div>
+  <div class="cta"><a class="btn" href="https://wa.me/917736442812">WhatsApp me</a><a class="btn o" href="mailto:akshaydespinz@gmail.com">Email me</a></div>
 </div></section>
 </main>
-<footer>&copy; 2026 Akshay Ganesh. Calicut, Kerala, India.</footer>
+<footer><div class="wrap"><div class="soc"><a href="https://www.instagram.com/akshay_digitalmarketer/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a><a href="https://www.linkedin.com/in/akshayganesh-nc/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://wa.me/917736442812" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a><a href="https://share.google/LJ2TwvCmG0s0rk1sK" aria-label="Google Business Profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a><a href="mailto:akshaydespinz@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a></div>&copy; 2026 Akshay Ganesh. Digital marketing strategist in Calicut, Kerala, India.</div></footer>
+
+<dialog id="lb"><img alt=""></dialog>
+<script>
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gal img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;li.alt=i.alt;lb.showModal()}));
+lb.addEventListener('click',()=>lb.close());
+</script>
 </body>
 </html>
