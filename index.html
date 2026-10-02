@@ -112,11 +112,25 @@ section{padding:3.5rem 0}
 .stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat{padding:.9rem;font-size:.8rem;line-height:1.3}.stat b{font-size:1.9rem}
 .gal,.svcs,.why{grid-template-columns:minmax(0,1fr)}
 .certs{grid-template-columns:repeat(2,minmax(0,1fr))}
-.info{grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:2.5rem}
+.info,.hero .info{grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:2.5rem}
 header.site b{display:none}
 header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5rem;width:100%;justify-content:space-between}header.site nav a{font-size:.76rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hero{padding:4.5rem 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:2rem;align-items:end}
+.hero .txt{padding-bottom:3rem}.hero .info{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem 1.5rem;margin-top:2.5rem}
+.hero h1{font-size:clamp(3rem,8.4vw,7.6rem)}
+.me{position:relative;align-self:end;justify-self:center;width:100%;max-width:470px}
+.me::before{content:"";position:absolute;left:6%;right:6%;bottom:0;height:78%;background:var(--lime);border-radius:999px 999px 0 0}
+.me img{position:relative;display:block;width:100%;height:auto}
+@media(max-width:860px){
+.hero{padding:2.5rem 0 0}
+.hero .wrap{grid-template-columns:minmax(0,1fr);gap:0}
+.hero .txt{padding-bottom:2rem}
+.hero h1{font-size:clamp(3rem,15vw,5.5rem)}
+.me{max-width:340px}
+}
 </style>
 </head>
 <body>
@@ -125,11 +139,14 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 
 <main>
 <div class="hero" id="home"><div class="wrap">
+  <div class="txt">
   <span class="pill">Digital marketing strategist in Calicut, Kerala, India</span>
   <h1>Akshay <span>Ganesh</span></h1>
   <p class="sub">Meta Ads, Google Ads, social media, content, WhatsApp and email marketing that bring in real enquiries. I plan it, run it and report on it.</p>
   <div class="cta"><a class="btn" href="#about">Know about me</a><a class="btn o" href="https://wa.me/917736442812?text=Hi%20Akshay%2C%20I%27d%20like%20to%20enquire%20about%20your%20digital%20marketing%20services.">Send inquiry</a></div>
   <div class="info"><div><small>Location</small>Calicut, Kerala, India</div><div><small>Phone</small><a href="tel:+917736442812">+91 77364 42812</a></div><div><small>Email</small><a href="mailto:akshaydespinz@gmail.com">akshaydespinz@gmail.com</a></div></div>
+  </div>
+  <div class="me"><img src="images/akshay-hero.webp" alt="Akshay Ganesh, digital marketing strategist in Calicut" width="760" height="975"></div>
 </div></div>
 <div class="strip"><div class="wrap">30+ clients &nbsp;|&nbsp; 100+ projects &nbsp;|&nbsp; Meta Ads &nbsp;|&nbsp; Google Ads &nbsp;|&nbsp; Social media</div></div>
 
