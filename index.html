@@ -131,7 +131,67 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 .hero h1{font-size:clamp(3rem,15vw,5.5rem)}
 .me{max-width:340px}
 }
+
+.marq{background:var(--lime);color:var(--black);overflow:hidden;white-space:nowrap;padding:.9rem 0;font-weight:700;font-size:clamp(1rem,2vw,1.3rem)}
+.marq .tr{display:inline-flex;animation:mq 30s linear infinite;will-change:transform}
+.marq span{padding:0 1.2rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+.band{background:#0d0d0d;border-block:1px solid var(--line);padding:3rem 0}
+.counters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;text-align:center}
+.counters b{display:block;font-size:clamp(2.6rem,7vw,5rem);font-weight:800;color:var(--lime);letter-spacing:-.04em;line-height:1}
+.counters span{color:#d6d6cf;font-weight:500}
+.mecard{background:var(--lime);color:var(--black);border-radius:28px;overflow:hidden;text-align:center}
+.mecard img{display:block;width:78%;margin:2rem auto 0;height:auto}
+.mecard div{background:var(--black);color:var(--white);padding:1.1rem}
+.mecard b{display:block;font-size:1.4rem;color:var(--lime)}
+.quote2{text-align:center;max-width:44rem;margin:0 auto 1.5rem}
+.logosw{overflow:hidden;margin-top:2.5rem;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.logosw .tr{display:flex;gap:1.2rem;width:max-content;animation:mq 45s linear infinite}
+.logosw:hover .tr{animation-play-state:paused}
+.logosw img{height:64px;width:auto;background:#fff7f1;border-radius:14px;padding:12px 20px;display:block}
+.jobs{border-left:2px solid var(--lime);margin-left:.5rem}
+.job{position:relative;padding-left:1.8rem;border-top:0;padding-top:.4rem;padding-bottom:1.6rem}
+.job::before{content:"";position:absolute;left:-8px;top:.9rem;width:14px;height:14px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px #000}
+.connect{text-align:center}
+.connect .soc a{width:60px;height:60px}.connect .soc svg{width:26px;height:26px}
+.dm{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.dm div{background:#111;border:1px solid var(--line);border-radius:24px;padding:1.8rem}
+.dm h3{font-size:1.4rem;color:var(--lime);margin-bottom:.8rem}
+.dm p{color:#d6d6cf;font-size:.97rem;margin-bottom:.8rem}
+.dm ul{list-style:none;padding:0}
+.dm li{padding-left:1.3rem;position:relative;margin:.45rem 0;color:#d6d6cf;font-size:.95rem}
+.dm li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--lime)}
+.flips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem}
+.flip{perspective:1100px;height:15.5rem;cursor:pointer;outline-offset:4px}
+.fi{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip:hover .fi,.flip:focus .fi,.flip.on .fi{transform:rotateY(180deg)}
+.ff,.fb{position:absolute;inset:0;border-radius:24px;padding:1.6rem;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.ff{background:var(--black);color:var(--lime)}
+.ff i{font-style:normal;font-size:3.4rem;font-weight:800;opacity:.35;line-height:1}
+.ff h3{font-size:1.6rem}
+.fb{background:#fff;color:var(--black);transform:rotateY(180deg);justify-content:center;gap:.6rem}
+.fb h3{font-size:1.3rem}.fb p{font-size:.95rem}
+.fnote{margin-top:1.2rem;font-size:.85rem;color:#2c3a00}
+.foot{background:#0d0d0d;border-top:1px solid var(--line);padding:3.5rem 0 1.5rem;text-align:left;font-size:.95rem}
+.foot .cols4{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
+.foot h4{color:var(--lime);font-size:1.1rem;margin-bottom:.8rem}
+.foot a{text-decoration:none;color:#d6d6cf}.foot a:hover{color:var(--lime)}
+.foot li{list-style:none;margin:.3rem 0}.foot ul{padding:0}
+.foot .btn{color:var(--black);margin-top:.8rem}
+.foot .soc{justify-content:flex-start}
+.copy{border-top:1px solid var(--line);margin-top:2rem;padding-top:1.2rem;text-align:center;color:var(--mute);font-size:.85rem}
+.wafloat{position:fixed;right:16px;bottom:16px;z-index:50;width:54px;height:54px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.wafloat svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.wafloat:hover{transform:scale(1.07)}
+@media(max-width:860px){
+.counters{gap:.6rem}.counters span{font-size:.8rem}
+.dm,.flips{grid-template-columns:minmax(0,1fr)}
+.foot .cols4{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.logosw img{height:52px}
+}
+@media(prefers-reduced-motion:reduce){.marq .tr,.logosw .tr{animation:none}.marq,.logosw{overflow-x:auto}.fi{transition:none}}
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akshay Ganesh","jobTitle":"Digital Marketing Strategist","address":{"@type":"PostalAddress","addressLocality":"Calicut","addressRegion":"Kerala","addressCountry":"IN"},"sameAs":["https://www.instagram.com/akshay_digitalmarketer/","https://www.linkedin.com/in/akshayganesh-nc/"]}</script>
 </head>
 <body>
 <header class="site"><div class="wrap"><b>Akshay Ganesh</b>
@@ -148,32 +208,36 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
   </div>
   <div class="me"><img src="images/akshay-hero.webp" alt="Akshay Ganesh, digital marketing strategist in Calicut" width="760" height="975"></div>
 </div></div>
-<div class="strip"><div class="wrap">30+ clients &nbsp;|&nbsp; 100+ projects &nbsp;|&nbsp; Meta Ads &nbsp;|&nbsp; Google Ads &nbsp;|&nbsp; Social media</div></div>
+<div class="marq" aria-label="Services"><div class="tr"><span>Meta Ads</span><span>&raquo;</span><span>Google Ads</span><span>&raquo;</span><span>Social Media Marketing</span><span>&raquo;</span><span>Content Marketing</span><span>&raquo;</span><span>WhatsApp Marketing</span><span>&raquo;</span><span>Email Marketing</span><span>&raquo;</span><span>Google Business Profile</span><span>&raquo;</span><span>Meta Ads</span><span>&raquo;</span><span>Google Ads</span><span>&raquo;</span><span>Social Media Marketing</span><span>&raquo;</span><span>Content Marketing</span><span>&raquo;</span><span>WhatsApp Marketing</span><span>&raquo;</span><span>Email Marketing</span><span>&raquo;</span><span>Google Business Profile</span><span>&raquo;</span></div></div>
 
 <section id="about"><div class="wrap about2">
   <div>
+    <h3 style="color:var(--lime);font-weight:500;letter-spacing:0;font-size:1.1rem;margin-bottom:.4rem">Know</h3>
     <h2>About me</h2>
     <p>Hi, I'm <strong>Akshay Ganesh</strong>, a Digital Marketing Specialist and Social Media Manager with 3+ years of professional experience helping businesses build and grow their online presence.</p>
     <p>I've worked with 30+ clients across different industries, gaining hands-on experience in social media management, Meta advertising, performance marketing, content strategy, lead generation, Facebook and Instagram marketing, and digital marketing strategy.</p>
     <p>My approach combines creative content, targeted advertising, audience research and data-driven marketing to help brands reach the right audience and achieve measurable business results.</p>
     <p>I'm passionate about digital marketing, continuously learning new trends and strategies, and turning ideas into effective digital campaigns that help businesses grow.</p>
-    <div class="quote">&ldquo;Selected and limited clients for better results&rdquo;</div>
-    <a class="btn" href="https://wa.me/917736442812?text=Hi%20Akshay%2C%20I%27d%20like%20to%20enquire%20about%20your%20digital%20marketing%20services.">Send inquiry</a>
+    <a class="btn" href="https://linkedin.com/in/akshayganesh-nc" target="_blank" rel="noopener">More about me</a>
   </div>
-  <div class="stats">
-    <div class="stat"><b>100+</b>Projects</div>
-    <div class="stat"><b>30+</b>Clients</div>
-    <div class="stat"><b>100%</b>Positive feedback</div>
-  </div>
+  <div class="mecard"><img src="images/akshay-hero.webp" alt="Akshay Ganesh" loading="lazy"><div><b>Akshay Ganesh</b>Digital Marketing Strategist in Calicut, Kerala</div></div>
 </div></section>
+
+<div class="band"><div class="wrap counters">
+  <div><b><span class="count" data-to="100">100</span>+</b><span>Projects completed</span></div>
+  <div><b><span class="count" data-to="30">30</span>+</b><span>Clients</span></div>
+  <div><b><span class="count" data-to="100">100</span>%</b><span>Positive feedback</span></div>
+</div></div>
 
 <section id="brands"><div class="wrap">
-  <h2>Featured brands</h2>
-  <p class="lead">Some of the brands I've worked with across real estate, retail, travel, migration, interior design and beauty.</p>
-  <div class="logos"><img src="images/brands.jpg" alt="Featured brands: Quadcubes, Her Store, Ekathra Experiences, Catalyst, Atlantis Migration, WEA Designs, Ascot Migration, Ozsy My Nails, RDW, Novi Indus, RBM Infracon, Prime Space, PB Homes, TBPL Homes and City Dental Clinic" loading="lazy"></div>
-</div></section>
+  <p class="quote2 quote">&ldquo;Selected and limited clients for better results&rdquo;</p>
+  <p style="text-align:center"><a class="btn" href="https://wa.me/917736442812?text=Hi%20Akshay%2C%20I%27d%20like%20to%20enquire%20about%20your%20digital%20marketing%20services.">Send inquiry</a></p>
+  <h2 style="text-align:center;margin-top:3.5rem">Featured brands</h2>
+</div>
+<div class="logosw"><div class="tr"><img src="images/logo-quadcubes.png" alt="Quadcubes" loading="lazy"><img src="images/logo-herstore.png" alt="Her Store" loading="lazy"><img src="images/logo-ekathra.png" alt="Ekathra Experiences" loading="lazy"><img src="images/logo-catalyst.png" alt="Catalyst" loading="lazy"><img src="images/logo-atlantis.png" alt="Atlantis Migration" loading="lazy"><img src="images/logo-wea.png" alt="WEA Designs" loading="lazy"><img src="images/logo-ascot.png" alt="Ascot Migration" loading="lazy"><img src="images/logo-ozsy.png" alt="Ozsy My Nails" loading="lazy"><img src="images/logo-rdw.png" alt="RDW Media" loading="lazy"><img src="images/logo-novi.png" alt="Novi Indus" loading="lazy"><img src="images/logo-rbm.png" alt="RBM Infracon" loading="lazy"><img src="images/logo-primespace.png" alt="Prime Space Projects" loading="lazy"><img src="images/logo-pbhomes.png" alt="PB Homes" loading="lazy"><img src="images/logo-tbpl.png" alt="TBPL Homes" loading="lazy"><img src="images/logo-citydental.png" alt="City Dental Clinic" loading="lazy"><img src="images/logo-quadcubes.png" alt="Quadcubes" loading="lazy"><img src="images/logo-herstore.png" alt="Her Store" loading="lazy"><img src="images/logo-ekathra.png" alt="Ekathra Experiences" loading="lazy"><img src="images/logo-catalyst.png" alt="Catalyst" loading="lazy"><img src="images/logo-atlantis.png" alt="Atlantis Migration" loading="lazy"><img src="images/logo-wea.png" alt="WEA Designs" loading="lazy"><img src="images/logo-ascot.png" alt="Ascot Migration" loading="lazy"><img src="images/logo-ozsy.png" alt="Ozsy My Nails" loading="lazy"><img src="images/logo-rdw.png" alt="RDW Media" loading="lazy"><img src="images/logo-novi.png" alt="Novi Indus" loading="lazy"><img src="images/logo-rbm.png" alt="RBM Infracon" loading="lazy"><img src="images/logo-primespace.png" alt="Prime Space Projects" loading="lazy"><img src="images/logo-pbhomes.png" alt="PB Homes" loading="lazy"><img src="images/logo-tbpl.png" alt="TBPL Homes" loading="lazy"><img src="images/logo-citydental.png" alt="City Dental Clinic" loading="lazy"></div></div>
+</section>
 
-<section id="portfolio"><div class="wrap">
+<section id="portfolio" style="padding-top:0"><div class="wrap">
   <h2>See my portfolio</h2>
   <p class="lead">Social media content, campaign concepts and ads I created and managed. Click any image to enlarge.</p>
   <div class="gal">
@@ -194,7 +258,7 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 </div></section>
 
 <section id="certificate"><div class="wrap">
-  <h2>Certification</h2>
+  <h2>My certifications</h2>
   <p class="lead">Certified and trained in paid advertising, analytics and inbound marketing.</p>
   <div class="certs">
     <div class="cert"><small>Google</small><b>Google Ads Certification</b></div>
@@ -210,14 +274,16 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 
 <section id="experience"><div class="wrap about">
   <div>
-    <h2>Experience</h2>
-    <div class="job"><b>Noviindus Technologies</b><span>Social Media Manager, Feb 2026 to Jun 2026</span><p>Managed social media strategy, content and campaign execution across platforms. Ran and optimised Meta Ads and Google Ads to support brand visibility.</p></div>
-    <div class="job"><b>Quadcubes</b><span>Social Media Manager, Jun 2025 to Oct 2025</span><p>Managed social media accounts, content planning and paid ad campaigns. Tracked campaign performance and adjusted strategy to improve engagement.</p></div>
-    <div class="job"><b>RDW Media</b><span>Social Media Manager, Mar 2024 to Jun 2025</span><p>Social media marketing and content strategy across client accounts. Managed Meta Ads and Google Ads to improve campaign performance.</p></div>
-    <div class="job"><b>Mentegoz Technologies</b><span>BDO &amp; Social Media Manager, Jan 2024 to Feb 2024</span><p>Combined business development outreach with social media management.</p></div>
-    <div class="job"><b>Quadcubes</b><span>Digital Marketing Intern, Aug 2023 to Nov 2023</span><p>Supported digital marketing campaigns, content creation and reporting.</p></div>
-    <div class="job"><b>Rotana Motors</b><span>Sales Consultant, Aug 2021 to May 2022</span><p>Handled client consultations and sales support.</p></div>
-    <div class="job"><b>EVM Group</b><span>Sales Consultant, Oct 2017 to Oct 2018</span><p>Handled client consultations and sales support.</p></div>
+    <h2>My experience</h2>
+    <div class="jobs">
+      <div class="job"><b>Noviindus Technologies</b><span>Social Media Manager, Feb 2026 to Jun 2026</span><p>Managed social media strategy, content and campaign execution across platforms. Ran and optimised Meta Ads and Google Ads to support brand visibility.</p></div>
+      <div class="job"><b>Quadcubes</b><span>Social Media Manager, Jun 2025 to Oct 2025</span><p>Managed social media accounts, content planning and paid ad campaigns. Tracked campaign performance and adjusted strategy to improve engagement.</p></div>
+      <div class="job"><b>RDW Media</b><span>Social Media Manager, Mar 2024 to Jun 2025</span><p>Social media marketing and content strategy across client accounts. Managed Meta Ads and Google Ads to improve campaign performance.</p></div>
+      <div class="job"><b>Mentegoz Technologies</b><span>BDO &amp; Social Media Manager, Jan 2024 to Feb 2024</span><p>Combined business development outreach with social media management.</p></div>
+      <div class="job"><b>Quadcubes</b><span>Digital Marketing Intern, Aug 2023 to Nov 2023</span><p>Supported digital marketing campaigns, content creation and reporting.</p></div>
+      <div class="job"><b>Rotana Motors</b><span>Sales Consultant, Aug 2021 to May 2022</span><p>Handled client consultations and sales support.</p></div>
+      <div class="job"><b>EVM Group</b><span>Sales Consultant, Oct 2017 to Oct 2018</span><p>Handled client consultations and sales support.</p></div>
+    </div>
   </div>
   <div class="side">
     <h3>Core skills</h3>
@@ -229,17 +295,33 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
   </div>
 </div></section>
 
+<section class="connect" style="padding-top:0"><div class="wrap">
+  <h2>Connect now</h2>
+  <div class="soc"><a href="https://www.instagram.com/akshay_digitalmarketer/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a><a href="https://www.linkedin.com/in/akshayganesh-nc/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://wa.me/917736442812" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a><a href="https://share.google/LJ2TwvCmG0s0rk1sK" aria-label="Google Business Profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a><a href="mailto:akshaydespinz@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a></div>
+</div></section>
+
+<section id="more" style="padding-top:0"><div class="wrap">
+  <h2>More about digital marketing</h2>
+  <div class="dm">
+    <div><h3>What is digital marketing?</h3><p>Digital marketing covers every way you reach customers online: search engines, social media, websites, messaging and email.</p><p>People spend hours on their phones every day, so it is one of the most direct ways to reach the right audience at the right time, with results you can measure.</p></div>
+    <div><h3>Why a freelance strategist?</h3><p>A freelance digital marketing strategist plans your campaigns, creates the content, runs the ads and studies the data, all with one point of contact.</p><p>You get personal attention, quick decisions and a plan built around your business instead of a one-size-fits-all package.</p></div>
+    <div><h3>Benefits of digital marketing</h3><ul><li>Reach the right audience</li><li>Lower cost than traditional ads</li><li>Trackable, measurable results</li><li>Brand building and credibility</li><li>Precise audience targeting</li><li>Direct customer engagement</li><li>Works on any budget</li></ul></div>
+  </div>
+  <p style="text-align:center;margin-top:2rem"><a class="btn" href="https://wa.me/917736442812?text=Hi%20Akshay%2C%20I%27d%20like%20a%20free%20consultation.">Get expert digital marketing advice: free consultation</a></p>
+</div></section>
+
 <section id="service"><div class="wrap">
   <h2>My digital marketing services</h2>
   <p class="lead">One person handling your ads, content and messaging, so nothing gets lost between agencies.</p>
-  <div class="svcs">
-    <div class="svc c1"><h3>Meta Ads</h3><p>Facebook and Instagram campaigns built around your offer, with creatives, audiences, budgets and lead tracking handled for you.</p></div>
-    <div class="svc c2"><h3>Google Ads (SEM)</h3><p>Paid search and display campaigns that put your business in front of people already searching for what you sell.</p></div>
-    <div class="svc c3"><h3>Social media marketing</h3><p>Content planning, posting, campaigns, community replies and influencer outreach to build and maintain your profiles.</p></div>
-    <div class="svc c4"><h3>Content marketing</h3><p>Festival posts, campaign concepts and product creatives that engage, attract and keep your audience.</p></div>
-    <div class="svc c5"><h3>WhatsApp and email marketing</h3><p>Broadcasts and email campaigns that follow up leads and bring customers back.</p></div>
-    <div class="svc c6"><h3>Google Business Profile</h3><p>Set up and manage your listing so local customers find you, call you and visit you.</p></div>
+  <div class="flips">
+    <div class="flip" tabindex="0"><div class="fi"><div class="ff"><i>01</i><h3>Meta Ads</h3></div><div class="fb"><h3>Meta Ads</h3><p>Facebook and Instagram campaigns built around your offer, with creatives, audiences, budgets and lead tracking handled for you.</p></div></div></div>
+    <div class="flip" tabindex="0"><div class="fi"><div class="ff"><i>02</i><h3>Google Ads (SEM)</h3></div><div class="fb"><h3>Google Ads (SEM)</h3><p>Paid search and display campaigns that put your business in front of people already searching for what you sell.</p></div></div></div>
+    <div class="flip" tabindex="0"><div class="fi"><div class="ff"><i>03</i><h3>Social media marketing</h3></div><div class="fb"><h3>Social media marketing</h3><p>Content planning, posting, campaigns, community replies and influencer outreach to build and maintain your profiles.</p></div></div></div>
+    <div class="flip" tabindex="0"><div class="fi"><div class="ff"><i>04</i><h3>Content marketing</h3></div><div class="fb"><h3>Content marketing</h3><p>Festival posts, campaign concepts and product creatives that engage, attract and keep your audience.</p></div></div></div>
+    <div class="flip" tabindex="0"><div class="fi"><div class="ff"><i>05</i><h3>WhatsApp and email marketing</h3></div><div class="fb"><h3>WhatsApp and email marketing</h3><p>Broadcasts and email campaigns that follow up leads and bring customers back.</p></div></div></div>
+    <div class="flip" tabindex="0"><div class="fi"><div class="ff"><i>06</i><h3>Google Business Profile</h3></div><div class="fb"><h3>Google Business Profile</h3><p>Set up and manage your listing so local customers find you, call you and visit you.</p></div></div></div>
   </div>
+  <p class="fnote">Hover or tap a card to read more.</p>
 </div></section>
 
 <section id="why"><div class="wrap">
@@ -254,9 +336,11 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
   </div>
 </div></section>
 
+<!-- TESTIMONIALS: add a section here when you have real client quotes (name, role, quote). -->
+
 <section id="faq"><div class="wrap" style="max-width:860px">
   <h2>Frequently asked questions</h2>
-  <details><summary>Who is the best digital marketer in Calicut?</summary><p>I'm Akshay Ganesh, a freelance digital marketer in Calicut who builds personal strategies around your goal, whether that's leads, sales, calls or footfall.</p></details>
+  <details><summary>Who is the best digital marketer in Calicut for my business?</summary><p>I'm Akshay Ganesh, a freelance digital marketer in Calicut who builds personal strategies around your goal, whether that's leads, sales, calls or footfall.</p></details>
   <details><summary>Do you work with businesses outside Calicut?</summary><p>Yes. I'm based in Calicut, but I work with clients across Kerala, including Thrissur, Kochi and Kottayam, and with businesses anywhere in India remotely.</p></details>
   <details><summary>What digital marketing services do you offer?</summary><p>Meta Ads, Google Ads (SEM), social media marketing, content marketing, WhatsApp and email marketing, and Google Business Profile management.</p></details>
   <details><summary>How can Meta Ads help my business?</summary><p>Meta Ads put your offer in front of the right people on Facebook and Instagram. I set up lead campaigns, test creatives and audiences, and report cost per lead so you can see what works.</p></details>
@@ -268,19 +352,34 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
-  <h2>Connect now</h2>
+  <h2>Free consultation</h2>
   <p>Looking for a digital marketer in Kerala? Tell me what you sell and who you want to reach, and I'll reply with a clear plan.</p>
-  <div class="det">Calicut, Kerala, India<br><a href="tel:+917736442812">+91 77364 42812</a><br><a href="mailto:akshaydespinz@gmail.com">akshaydespinz@gmail.com</a></div>
   <div class="cta"><a class="btn" href="https://wa.me/917736442812">WhatsApp me</a><a class="btn o" href="mailto:akshaydespinz@gmail.com">Email me</a></div>
 </div></section>
 </main>
-<footer><div class="wrap"><div class="soc"><a href="https://www.instagram.com/akshay_digitalmarketer/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a><a href="https://www.linkedin.com/in/akshayganesh-nc/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://wa.me/917736442812" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a><a href="https://share.google/LJ2TwvCmG0s0rk1sK" aria-label="Google Business Profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a><a href="mailto:akshaydespinz@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a></div>&copy; 2026 Akshay Ganesh. Digital marketing strategist in Calicut, Kerala, India.</div></footer>
+
+<footer class="foot"><div class="wrap">
+  <div class="cols4">
+    <div><h4>Get in touch</h4><p style="color:#d6d6cf">Looking for a digital marketing consultant in Kerala? Let's connect and plan your next campaign.</p>
+      <ul><li><a href="mailto:akshaydespinz@gmail.com">akshaydespinz@gmail.com</a></li><li><a href="tel:+917736442812">+91 77364 42812</a></li><li>Calicut, Kerala, India</li></ul>
+      <a class="btn" href="https://wa.me/917736442812">Hire me</a></div>
+    <div><h4>Services</h4><ul><li>Meta Ads</li><li>Google Ads</li><li>Social Media Marketing</li><li>Content Marketing</li><li>WhatsApp and Email Marketing</li><li>Google Business Profile</li></ul></div>
+    <div><h4>Quick links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#certificate">Certificate</a></li><li><a href="#service">Service</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h4>Follow</h4><div class="soc"><a href="https://www.instagram.com/akshay_digitalmarketer/" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a><a href="https://www.linkedin.com/in/akshayganesh-nc/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://wa.me/917736442812" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a><a href="https://share.google/LJ2TwvCmG0s0rk1sK" aria-label="Google Business Profile" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></a><a href="mailto:akshaydespinz@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></a></div></div>
+  </div>
+  <div class="copy">&copy; 2026 Akshay Ganesh. Digital marketing strategist in Calicut, Kerala, India.</div>
+</div></footer>
+
+<a class="wafloat" href="https://wa.me/917736442812?text=Hi%20Akshay" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
 
 <dialog id="lb"><img alt=""></dialog>
 <script>
 const lb=document.getElementById('lb'),li=lb.querySelector('img');
 document.querySelectorAll('.gal img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;li.alt=i.alt;lb.showModal()}));
 lb.addEventListener('click',()=>lb.close());
+document.querySelectorAll('.flip').forEach(f=>f.addEventListener('click',()=>f.classList.toggle('on')));
+const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!rm&&'IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);const to=+e.target.dataset.to,t0=performance.now();(function s(t){const p=Math.min((t-t0)/1800,1);e.target.textContent=Math.round(to*p);if(p<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});document.querySelectorAll('.count').forEach(c=>{c.textContent='0';io.observe(c)})}
 </script>
 </body>
 </html>
