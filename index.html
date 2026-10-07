@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Albert+Sans:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--lime:#5CB85C;--black:#000;--card:#121212;--line:#2a2a2a;--mute:#a8a8a0;--white:#f5f5ef}
+:root{--lime:#FFC20E;--black:#000;--card:#121212;--line:#2a2a2a;--mute:#a8a8a0;--white:#f5f5ef}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
 body{background:var(--black);color:var(--white);font:400 1rem/1.7 Poppins,system-ui,sans-serif}
@@ -22,7 +22,7 @@ h2{font-size:clamp(2.2rem,5vw,3.8rem);color:var(--lime);margin-bottom:1rem}
 section{padding:5.5rem 0;scroll-margin-top:64px}
 #certificate,#service,#contact{background:var(--lime);color:var(--black)}
 #certificate h2,#service h2,#contact h2{color:var(--black)}
-#certificate .lead,#service .lead{color:#0f2e12}
+#certificate .lead,#service .lead{color:#3A3000}
 header.site{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-top:.85rem;padding-bottom:.85rem}
 header.site b{color:var(--lime);font-weight:700;white-space:nowrap}
@@ -171,7 +171,7 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 .ff h3{font-size:1.6rem}
 .fb{background:#fff;color:var(--black);transform:rotateY(180deg);justify-content:center;gap:.6rem}
 .fb h3{font-size:1.3rem}.fb p{font-size:.95rem}
-.fnote{margin-top:1.2rem;font-size:.85rem;color:#0f2e12}
+.fnote{margin-top:1.2rem;font-size:.85rem;color:#3A3000}
 .foot{background:#0d0d0d;border-top:1px solid var(--line);padding:3.5rem 0 1.5rem;text-align:left;font-size:.95rem}
 .foot .cols4{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2rem}
 .foot h4{color:var(--lime);font-size:1.1rem;margin-bottom:.8rem}
@@ -195,7 +195,7 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
    RESTYLE: colors + typography only (bold ad-agency look)
    ========================================================== */
 :root{
-  --lime:#20BF55;--red:#FF0000;--cyan:#0DDAF2;--red-d:#000000;--black:#000000;--card:#181818;
+  --lime:#FFC20E;--red:#FF0000;--cyan:#0DDAF2;--red-d:#000000;--black:#000000;--card:#181818;
   --line:#2E2E2E;--mute:#B3B3AD;--white:#FFFFFF;
   --display:Anton,"Bebas Neue",Impact,"Arial Narrow",sans-serif;
 }
@@ -204,8 +204,8 @@ h1,h2,h3,h4,.stat b,.counters b,.cert b,.job b,.mecard b,.ff i{
 }
 h1,h2,h3{line-height:.98}
 .hero h1{font-size:clamp(3.4rem,10.5vw,9.4rem);line-height:.9;letter-spacing:0;color:var(--white);text-shadow:0 4px 0 rgba(0,0,0,.35)}
-.hero h1 span{color:var(--lime);text-shadow:0 0 34px rgba(32,191,85,.4)}
-h2{font-size:clamp(2.8rem,6.6vw,5.2rem);color:var(--lime);position:relative;text-shadow:0 0 28px rgba(32,191,85,.3)}
+.hero h1 span{color:var(--lime);text-shadow:0 0 34px rgba(255,194,14,.4)}
+h2{font-size:clamp(2.8rem,6.6vw,5.2rem);color:var(--lime);position:relative;text-shadow:0 0 28px rgba(255,194,14,.3)}
 #certificate h2,#service h2,#contact h2{color:var(--black);text-shadow:none}
 h2::after{content:"";position:absolute;left:0;bottom:-.55rem;width:110px;height:10px;background:var(--red);transform:skewX(-24deg);transform-origin:left}
 #certificate h2::after,#service h2::after,#contact h2::after{background:var(--red-d)}
@@ -234,7 +234,7 @@ header.site nav a:hover{color:#fff}
 .contact .btn:hover{background:#fff;border-color:#fff;color:#000}
 .contact .btn.o:hover{background:var(--black);color:var(--lime);border-color:var(--black)}
 .foot .btn:hover{color:#000}
-#certificate .lead,#service .lead,.fnote{color:#0f2e12}
+#certificate .lead,#service .lead,.fnote{color:#3A3000}
 .band,.foot{background-color:#000}
 .stat:nth-child(2),.cert:nth-child(even),.svc:nth-child(even),.fb{background:#F5F5F5;color:#242020}
 .fb h3,.fb p{color:#242020}
@@ -258,10 +258,10 @@ summary::after{color:var(--red)}
 }
 
 /* ==========================================================
-   MATCH dmirsha.com: black + exact green #20BF55 + white.
+   MATCH dmirsha.com: black + exact green #FFC20E + white.
    Fonts: Orbitron (italic headings), Montserrat (menu/buttons), Albert Sans (body). No red, no blue.
    ========================================================== */
-:root{--lime:#20BF55;--red:#20BF55;--cyan:#FFFFFF;--red-d:#000000;--display:Orbitron,sans-serif}
+:root{--lime:#FFC20E;--red:#FFC20E;--cyan:#FFFFFF;--red-d:#000000;--display:Orbitron,sans-serif}
 body{font-family:'Albert Sans',system-ui,sans-serif;background:#000}
 h1,h2,h3,h4,.stat b,.counters b,.cert b,.job b,.mecard b,.ff i,.quote,.quote2,.marq,.strip,header.site b{
   font-family:Orbitron,sans-serif;font-weight:700;font-style:italic;letter-spacing:.02em;text-transform:uppercase}
