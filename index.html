@@ -7,7 +7,7 @@
 <meta name="description" content="Freelance digital marketer in Calicut, Kerala. Meta Ads, Google Ads, social media, content and WhatsApp marketing for real estate, retail, travel and service brands.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--lime:#C6FF34;--black:#000;--card:#121212;--line:#2a2a2a;--mute:#a8a8a0;--white:#f5f5ef}
 *{box-sizing:border-box;margin:0}
@@ -190,6 +190,68 @@ header.site .wrap{padding-left:.9rem;padding-right:.9rem}header.site nav{gap:.5r
 .logosw img{height:52px}
 }
 @media(prefers-reduced-motion:reduce){.marq .tr,.logosw .tr{animation:none}.marq,.logosw{overflow-x:auto}.fi{transition:none}}
+
+/* ==========================================================
+   RESTYLE: colors + typography only (bold ad-agency look)
+   ========================================================== */
+:root{
+  --lime:#FFC20E;--red:#E0281C;--red-d:#B3130C;--black:#080808;--card:#181818;
+  --line:#2E2E2E;--mute:#B3B3AD;--white:#FFFFFF;
+  --display:Anton,"Bebas Neue",Impact,"Arial Narrow",sans-serif;
+}
+h1,h2,h3,h4,.stat b,.counters b,.cert b,.job b,.mecard b,.ff i{
+  font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.01em;
+}
+h1,h2,h3{line-height:.98}
+.hero h1{font-size:clamp(3.4rem,10.5vw,9.4rem);line-height:.9;letter-spacing:0;color:var(--white);text-shadow:0 4px 0 rgba(0,0,0,.35)}
+.hero h1 span{color:var(--lime);text-shadow:0 0 34px rgba(255,194,14,.4)}
+h2{font-size:clamp(2.8rem,6.6vw,5.2rem);color:var(--lime);position:relative;text-shadow:0 0 28px rgba(255,194,14,.3)}
+#certificate h2,#service h2,#contact h2{color:var(--black);text-shadow:none}
+h2::after{content:"";position:absolute;left:0;bottom:-.55rem;width:110px;height:10px;background:var(--red);transform:skewX(-24deg);transform-origin:left}
+#certificate h2::after,#service h2::after,#contact h2::after{background:var(--red-d)}
+.contact h2::after,h2[style*="center"]::after{left:50%;transform:translateX(-50%) skewX(-24deg)}
+.svc h3,.dm h3,.why h3,.side h3{font-size:1.7rem;letter-spacing:.02em}
+.ff h3{font-size:1.9rem;color:var(--lime)}
+.fb h3{font-size:1.6rem}
+.job b{font-size:1.7rem}
+.cert b{font-size:1.35rem;line-height:1.1}
+.stat b,.counters b,.mecard b{letter-spacing:0}
+.foot h4{font-size:1.4rem;letter-spacing:.03em}
+.quote,.quote2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(1.6rem,3.6vw,2.4rem);line-height:1.1}
+.marq,.strip{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.04em;background:var(--lime)}
+.marq span:nth-child(even){color:var(--red-d)}
+.about2 p,.hero .sub,.job p,.side p,.dm p,.dm li,.why ul,.foot a,.foot p{color:#E4E4DE}
+.btn{font-family:Poppins,system-ui,sans-serif;font-weight:700;letter-spacing:.03em;text-transform:uppercase;font-size:.88rem}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn.o{border-color:var(--red)}
+.btn.o:hover{background:var(--red);border-color:var(--red);color:#fff}
+.pill{border-color:var(--red);background:var(--red);color:#fff;font-weight:600;transform:skewX(-8deg);padding-left:1.3rem;padding-right:1.3rem}
+header.site{background:rgba(8,8,8,.94);border-bottom:2px solid var(--red)}
+header.site b{font-family:var(--display);font-weight:400;font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase}
+header.site nav a{font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.85rem}
+header.site nav a:hover{color:var(--red)}
+.contact .btn:hover{background:var(--red-d);border-color:var(--red-d);color:#fff}
+.contact .btn.o:hover{background:var(--black);color:var(--lime);border-color:var(--black)}
+.foot .btn:hover{color:#fff}
+#certificate .lead,#service .lead,.fnote{color:#3A3000}
+.band,.foot{background-color:#111}
+.hero,.band,.foot{background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.4px);background-size:7px 7px}
+.stat:nth-child(3){border-color:var(--red)}
+.dm li::before{background:var(--red)}
+.why div{border-top:3px solid var(--red)}
+.ff i{color:var(--red);opacity:.95}
+.chips span:hover{border-color:var(--red);color:var(--red)}
+.jobs{border-left-color:var(--red)}
+.job::before{background:var(--red)}
+.job span{font-weight:600}
+summary::after{color:var(--red)}
+.soc a:hover{background:var(--red);color:#fff}
+.foot a:hover,.info a:hover{color:var(--lime)}
+@media(max-width:860px){
+  .hero h1{font-size:clamp(3.4rem,17vw,6.2rem)}
+  h2{font-size:clamp(2.5rem,11vw,3.6rem)}
+  header.site nav a{font-size:.72rem}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Akshay Ganesh","jobTitle":"Digital Marketing Strategist","address":{"@type":"PostalAddress","addressLocality":"Calicut","addressRegion":"Kerala","addressCountry":"IN"},"sameAs":["https://www.instagram.com/akshay_digitalmarketer/","https://www.linkedin.com/in/akshayganesh-nc/"]}</script>
 </head>
